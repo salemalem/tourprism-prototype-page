@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>TourPrism Home</title>
+  <meta name="description" content="TourPrism Home page">
+  <meta name="author" content="TourPrism">
+
+  <meta property="og:title" content="TourPrism">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta property="og:description" content="TourPrism Home page">
+  <meta property="og:image" content="">
+
+  <link rel="icon" href="">
+  <link rel="icon" href="" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+  
+  <script>
+    // Initialize and add the map
+    function initMap() {
+      // The location of Uluru
+      const uluru = { lat: -25.344, lng: 131.036 };
+      // The map, centered at Uluru
+      const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 4,
+        center: uluru,
+      });
+      // The marker, positioned at Uluru
+      const marker = new google.maps.Marker({
+        position: uluru,
+        map: map,
+      });
+    }
+  </script>
+</head>
+
+<body>
+  <!-- your content here... -->
+
+  <div class="flex flex-wrap">
+    <section class="relative mx-auto">
+        <!-- navbar -->
+      <nav class="flex justify-between w-screen text-gray-800">
+        <div class="flex items-center w-full px-5 py-6 xl:px-12">
+          <a class="text-3xl font-bold font-heading" href="#">
+            TourPrism
+          </a>
+          <!-- Nav Links -->
+          <ul class="hidden px-4 mx-auto space-x-12 font-semibold md:flex font-heading">
+            <li><a class="hover:text-gray-900" href="#">Home</a></li>
+            <li><a class="hover:text-gray-900" href="#">Catagory</a></li>
+            <li><a class="hover:text-gray-900" href="#">Collections</a></li>
+            <li><a class="hover:text-gray-900" href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <!-- Responsive navbar -->
+        <a class="flex items-center mr-6 xl:hidden" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 hover:text-gray-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+          </svg>
+          <span class="absolute flex ml-4 -mt-5">
+            <span class="absolute inline-flex w-3 h-3 bg-pink-400 rounded-full opacity-75 animate-ping"></span>
+            <span class="relative inline-flex w-3 h-3 bg-pink-500 rounded-full">
+            </span>
+          </span>
+        </a>
+      </nav>
+      
+    </section>
+  </div>
+  
+  </div>
+
+  
+
+  
+  <div id="map" style="width:100vw;height:50vh; display: flex; justify-content: center;" class="items-center">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!
+    1d3723.8977453149246!2d105.83245751424809!3d21.036777085994046!
+    2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!
+    1s0x3135aba15ec15d17%3A0x620e85c2cfe14d4c!2zTMSDbmcgSOG7kyBDaMOtIE1pbmg!
+    5e0!3m2!1svi!2sus!4v1501056274257" width="100%" height="100%"
+    frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
+  
+
+</body>
+</html>

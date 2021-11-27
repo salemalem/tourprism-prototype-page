@@ -42,8 +42,8 @@
 
 <body>
   <!-- your content here... -->
-
-  <div class="flex flex-wrap">
+  <div class="grid grid-cols-1 divide-y">
+  <div class="flex grid flex-wrap">
     <section class="relative mx-auto">
         <!-- navbar -->
       <nav class="flex justify-between w-screen text-gray-800">
@@ -89,7 +89,7 @@
             </div>
 
             <!-- image search box -->
-            <div class="pt-6 box">
+            <div class="p-20 box">
                 <div class="box-wrapper">
 
                     <div class="flex items-center w-full p-3 bg-white border border-gray-200 rounded shadow-sm ">
@@ -103,20 +103,67 @@
     </div>
   </div> 
   </div>
-  <div id="map"></div>
-  <style>
-    /* Set the size of the div element that contains the map */
-    #map {
-      height: 400px;
-      /* The height is 400 pixels */
-      width: 90vw;
-      /* The width is the width of the web page */
-    }
-  </style>
-    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&libraries=&v=weekly"
-      async
-    ></script>
+  <section>
+    <div id="map" style="width:100vw;height:50vh; display: flex; justify-content: center;" class="items-center">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!
+      1d3723.8977453149246!2d105.83245751424809!3d21.036777085994046!
+      2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!
+      1s0x3135aba15ec15d17%3A0x620e85c2cfe14d4c!2zTMSDbmcgSOG7kyBDaMOtIE1pbmg!
+      5e0!3m2!1svi!2sus!4v1501056274257" width="100%" height="100%"
+      frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <div class="mt-16">
+    <h3 class="text-2xl font-medium text-gray-600">More Products</h3>
+    <div class="grid grid-cols-1 gap-6 mt-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <div class="w-full max-w-sm mx-auto overflow-hidden rounded-md shadow-md">
+            <div class="flex items-end justify-end w-full h-56 bg-cover" style="background-image: url('https://images.unsplash.com/photo-1563170351-be82bc888aa4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=376&q=80')">
+                <button class="p-2 mx-5 -mb-4 text-white bg-blue-600 rounded-full hover:bg-blue-500 focus:outline-none focus:bg-blue-500">
+                    <svg class="w-5 h-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                </button>
+            </div>
+            <div class="px-5 py-3">
+                <h3 class="text-gray-700 uppercase">Chanel</h3>
+                <span class="mt-2 text-gray-500">$12</span>
+            </div>
+        </div>
+        <div class="w-full max-w-sm mx-auto overflow-hidden rounded-md shadow-md">
+            <div class="flex items-end justify-end w-full h-56 bg-cover" style="background-image: url('https://images.unsplash.com/photo-1544441893-675973e31985?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80')">
+                <button class="p-2 mx-5 -mb-4 text-white bg-blue-600 rounded-full hover:bg-blue-500 focus:outline-none focus:bg-blue-500">
+                    <svg class="w-5 h-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                </button>
+            </div>
+            <div class="px-5 py-3">
+                <h3 class="text-gray-700 uppercase">Man Mix</h3>
+                <span class="mt-2 text-gray-500">$12</span>
+            </div>
+        </div>
+        <div class="w-full max-w-sm mx-auto overflow-hidden rounded-md shadow-md">
+            <div class="flex items-end justify-end w-full h-56 bg-cover" style="background-image: url('https://images.unsplash.com/photo-1532667449560-72a95c8d381b?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80')">
+                <button class="p-2 mx-5 -mb-4 text-white bg-blue-600 rounded-full hover:bg-blue-500 focus:outline-none focus:bg-blue-500">
+                    <svg class="w-5 h-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                </button>
+            </div>
+            <div class="px-5 py-3">
+                <h3 class="text-gray-700 uppercase">Classic watch</h3>
+                <span class="mt-2 text-gray-500">$12</span>
+            </div>
+        </div>
+        <div class="w-full max-w-sm mx-auto overflow-hidden rounded-md shadow-md">
+            <div class="flex items-end justify-end w-full h-56 bg-cover" style="background-image: url('https://images.unsplash.com/photo-1590664863685-a99ef05e9f61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=345&q=80')">
+                <button class="p-2 mx-5 -mb-4 text-white bg-blue-600 rounded-full hover:bg-blue-500 focus:outline-none focus:bg-blue-500">
+                    <svg class="w-5 h-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                </button>
+            </div>
+            <div class="px-5 py-3">
+                <h3 class="text-gray-700 uppercase">woman mix</h3>
+                <span class="mt-2 text-gray-500">$12</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+  </div>
 </body>
 </html>
