@@ -1,0 +1,20 @@
+#logo {
+    transition: 0.3s;
+}
+
+#logo:hover {
+    transform: rotate(360deg);
+}
+
+#logo_name:hover {
+    letter-spacing: 5px;
+}
+
+.number {
+    transition: 0.3s;
+}
+
+.number:hover {
+    transform: scale(120%);
+    text-shadow: 10px 5px 5px rgba(39, 39, 39, 0.37);
+}
